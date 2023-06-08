@@ -1,8 +1,288 @@
 :root {
-  --tomato: #ff6257;
+  --tomato: rgb(255, 98, 87);
   --dark-slate-grey: #242742;
   --charcoal-grey: #36384e;
   --grey: #9294a0;
   --white: #ffffff;
 }
+
+* {
+  /* border: 1px solid red; */
+}
+
+/* App.js */
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--charcoal-grey);
+  width: 100%;
+  height: 100vh;
+}
+
+/* END App.js */
+
+/* Form.js */
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--white);
+  width: 660px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 16px rgba(0,0,0,0.2);
+}
+
+.bg-image {
+  width: 290px;
+  height: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px;
+  color: var(--dark-slate-grey);
+}
+
+.title {
+  margin: 10px 0 18px 0;
+  font-size: 44px;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.list {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.list-item {
+  font-size: 13px; 
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.check-icone {
+  display: inline-block;
+  width: 16px; 
+  height: 16px; 
+  vertical-align: middle;
+  margin-right: 15px; 
+  background-image: url(./images/icon-list.svg);
+  background-size: contain;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labels label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+}
+
+.email-input,
+.btn {
+  width: 100%;
+  height: 42px;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.email-input {
+  text-indent: 15px;
+  border: 1px solid var(--grey);
+  opacity: 0.7;
+  caret-color: var(--grey);
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--dark-slate-grey);
+  font-weight: 700;
+  border:none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--tomato);
+  box-shadow: 2px 2px 20px rgba(255, 98, 87, 0.7);
+}
+
+.email-input:hover {
+  cursor: pointer;
+}
+
+.email-input.invalid {
+  background-color: rgba(255, 98, 87, 0.2);
+  border: 2px solid red;
+  color: red;
+}
+
+.error-email {
+  display: none;
+  color: red;
+}
+
+.error-email.active {
+  display: block;
+  color: red;
+}
+
+/* END Form.js */
+
+/* Subscried.js */
+
+.subscribed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--dark-slate-grey);
+  background-color: var(--white);
+  width: 300px;
+  height: auto;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 16px rgba(0,0,0,0.2);
+}
+
+.subscribe-img {
+  width: 50px;
+  height: auto;
+}
+
+.subscribed-container .paragraph {
+  margin: 20px 0;
+}
+
+.subscribed-container .title {
+  margin: 30px 0 0 0;
+}
+
+/* END Subscried.js */
+
+/* Mobile Form.js*/
+
+@media screen and (max-width: 700px) {
+
+  .app {
+    background-color: var(--white);
+  }
+
+  .newsletter-container {
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: start;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .illustration-container {
+    width: 100%;
+  }
+
+  .form-container {
+    position: relative;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+  
+  .paragraph,
+  .list-item {
+    font-size: 16px;
+  }
+
+  .list {
+    margin-bottom: 20px;
+  }
+
+  .labels label{
+    font-size: 12px;
+  }
+
+  .email-input,
+  .btn {
+    height: 50px;
+  }
+
+  .btn {
+    margin: 15px 0;
+  }
+  
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .newsletter-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+
+  .app {
+    align-items: flex-start;
+  }
+
+  .newsletter-container {
+    height: auto;
+  }
+
+  .illustration-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .form-container {
+    align-items: flex-start;
+  }
+}
+
+/* END Mobile Form.js */
+
+/* Mobile Subscribed.js */
+
+@media screen and (max-width: 700px) {
+  .subscribed-container {
+    box-shadow: none;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+/* END Mobile Subscribed.js */
 
