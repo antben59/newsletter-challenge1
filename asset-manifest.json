@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/newsletter-challenge1/static/css/main.7d6495eb.css",
+    "main.js": "/newsletter-challenge1/static/js/main.11daa041.js",
+    "static/js/787.af0f324a.chunk.js": "/newsletter-challenge1/static/js/787.af0f324a.chunk.js",
+    "static/media/illustration-sign-up-mobile.svg": "/newsletter-challenge1/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "static/media/illustration-sign-up-desktop.svg": "/newsletter-challenge1/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
+    "index.html": "/newsletter-challenge1/index.html",
+    "static/media/icon-success.svg": "/newsletter-challenge1/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "static/media/icon-list.svg": "/newsletter-challenge1/static/media/icon-list.5e317c030bb9f11a3343.svg",
+    "main.7d6495eb.css.map": "/newsletter-challenge1/static/css/main.7d6495eb.css.map",
+    "main.11daa041.js.map": "/newsletter-challenge1/static/js/main.11daa041.js.map",
+    "787.af0f324a.chunk.js.map": "/newsletter-challenge1/static/js/787.af0f324a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d6495eb.css",
+    "static/js/main.11daa041.js"
+  ]
+}
